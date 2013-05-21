@@ -6,7 +6,9 @@
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
-    <string name="beer_name_new">New BEER!</string>
-    <string name="title">Add new beer</string>
+    <string name="beer_name_new">Enter new beer name</string>
+    <string name="title1">Enter new beer data</string>
+    <string name="category_1">Flavour</string><string name="category_2">Alcohol</string><string name="category_3">Visual</string><string name="category_4">Unique</string>
+    <string name="button_submit">Submit</string><string name="button_photo">Take photo</string>
 
 </resources>

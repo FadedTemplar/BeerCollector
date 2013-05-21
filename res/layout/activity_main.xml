@@ -3,9 +3,9 @@
     android:id="@+id/container"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:layout_gravity="fill"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:layout_gravity="fill"
     tools:context=".MainActivity"
     tools:ignore="MergeRootFrame" >
 
@@ -13,7 +13,7 @@
         android:id="@+id/textView1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title"
+        android:text="@string/title1"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="60sp"
         android:textStyle="bold" />
@@ -26,9 +26,114 @@
         android:ems="10"
         android:inputType="text"
         android:text="@string/beer_name_new"
-        android:textSize="30sp" >
+        android:textSize="40sp" >
 
         <requestFocus />
     </EditText>
+
+    <TextView
+        android:id="@+id/TextView_category_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_toLeftOf="@+id/ratingBar3"
+        android:text="@string/category_1"
+        android:textSize="50sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ratingBar1"
+        android:numStars="5"
+        android:rating="3.0"
+        android:stepSize="1.0" />
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView_category_1"
+        android:layout_alignLeft="@+id/ratingBar2"
+        android:numStars="5"
+        android:rating="3.0"
+        android:stepSize="1.0" />
+
+    <RatingBar
+        android:id="@+id/ratingBar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ratingBar2"
+        android:layout_below="@+id/TextView_category_2"
+        android:numStars="5"
+        android:rating="3.0"
+        android:stepSize="1.0" />
+
+    <RatingBar
+        android:id="@+id/ratingBar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ratingBar3"
+        android:layout_below="@+id/ratingBar3"
+        android:numStars="5"
+        android:rating="3.0"
+        android:stepSize="1.0" />
+
+    <TextView
+        android:id="@+id/TextView_category_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ratingBar4"
+        android:layout_alignLeft="@+id/TextView_category_2"
+        android:layout_alignRight="@+id/TextView_category_1"
+        android:layout_alignTop="@+id/ratingBar3"
+        android:text="@string/category_3"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/TextView_category_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ratingBar2"
+        android:layout_alignLeft="@+id/TextView_category_1"
+        android:layout_alignRight="@+id/TextView_category_1"
+        android:layout_below="@+id/TextView_category_1"
+        android:text="@string/category_2"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/TextView_category_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ratingBar4"
+        android:layout_alignLeft="@+id/TextView_category_3"
+        android:layout_alignRight="@+id/TextView_category_3"
+        android:layout_alignTop="@+id/ratingBar4"
+        android:text="@string/category_4"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView_category_4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/ratingBar4"
+        android:text="@string/button_submit"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="97dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/button_photo"
+        android:textSize="50sp" />
 
 </RelativeLayout>
